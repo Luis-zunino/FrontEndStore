@@ -15,9 +15,10 @@ a img {
     font-family: "Staatliches", cursive;
     color: white;
     font-size: 3rem; }
-    .nav a:hover,
-    .nav a .activo {
+    .nav a:hover {
       color: #FFCE00; }
+  .nav .activo {
+    color: #FFCE00; }
 
 footer {
   background-color: #89119D;
