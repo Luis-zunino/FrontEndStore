@@ -1,0 +1,36 @@
+@import "../PARTES/variables";
+
+.nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+
+    @media(max-width: 768px) {
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(1, 1fr);
+
+        img {
+            grid-row: 1/2;
+        }
+    }
+}
+
+.comprar {
+    .bloques {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+        @media(min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .bloque {
+            text-align: center;
+
+            h3{
+                margin: 0;
+            }
+        }
+    }
+}

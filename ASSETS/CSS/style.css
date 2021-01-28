@@ -71,6 +71,29 @@ footer {
         grid-column: 1/3;
         grid-row: 8/9; } }
 
+.nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem; }
+  @media (max-width: 768px) {
+    .nosotros {
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(1, 1fr); }
+      .nosotros img {
+        grid-row: 1/2; } }
+
+.comprar .bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; }
+  @media (min-width: 768px) {
+    .comprar .bloques {
+      grid-template-columns: repeat(4, 1fr); } }
+  .comprar .bloques .bloque {
+    text-align: center; }
+    .comprar .bloques .bloque h3 {
+      margin: 0; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
