@@ -1,0 +1,13 @@
+@import "variables";
+
+footer {
+    background-color: $primOscuro;
+    padding: 1rem 0;
+    margin-top: 2rem;
+
+    p {
+        text-align: center;
+        font-family: $fuentePrincipal;
+        font-size: 2.2rem;
+    }
+}
