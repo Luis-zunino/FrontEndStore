@@ -12,7 +12,8 @@
         color: $blanco;
         font-size: 3rem;
 
-        &:hover {
+        &:hover,
+        .activo {
             color: $secundario;
         }
     }
