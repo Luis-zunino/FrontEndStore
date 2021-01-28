@@ -1,0 +1,65 @@
+@import "../PARTES/variables";
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @media(max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto {
+        background-color: $primOscuro;
+        padding: 1rem;
+
+        img {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        .infoProducto {
+            .nombreProducto {
+                font-size: 4rem;
+            }
+
+            .precioProducto {
+                font-size: 2.8;
+                color: $secundario;
+            }
+
+            .precioProducto,
+            .nombreProducto {
+                text-align: center;
+                font-family: $fuentePrincipal;
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .grafico {
+        min-height: 30rem;
+    }
+
+    .camisas {
+        height: 100%;
+        overflow: hidden;
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
+    .node {
+        height: 100%;
+        overflow: hidden;
+
+        @media(min-width: 768px) {
+            grid-column: 2/4;
+            grid-row: 5/6;
+        }
+
+        @media(max-width: 767px) {
+            grid-column: 1/3;
+            grid-row: 8/9;
+        }
+    }
+}
